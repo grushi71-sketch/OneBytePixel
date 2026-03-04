@@ -83,8 +83,9 @@ nav a {
 }
 .card img {
     width:100%;
-    height:200px;
-    object-fit:cover;
+    height:200px;        /* wysokość kafelka */
+    object-fit:cover;     /* wypełnia box */
+    object-position: top; /* pokazuje górę screena */
 }
 .card-content {
     padding:20px;
@@ -126,25 +127,28 @@ footer {
 </section>
 
 <section class="games">
-    <!-- Pierwszy kafelek: Tree Jumping -->
+    <!-- Kafelek Tree Jumping -->
     <div class="card">
-        <img src="treejumping-1.png" alt="Tree Jumping">
-        <div class="card-content">
-            <h3>Tree Jumping</h3>
-            <p>Vertical arcade action — climb, dash, survive!</p>
-        </div>
+        <a href="treejumping.html">
+            <img src="treejumping-1.png" alt="Tree Jumping">
+            <div class="card-content">
+                <h3>Tree Jumping</h3>
+                <p>Vertical arcade action — climb, dash, survive!</p>
+            </div>
+        </a>
     </div>
 
-    <!-- Puste kafelki -->
+    <!-- Puste kafelki na przyszłe gry -->
     <div class="card">
         <div class="card-content">
             <h3>Coming Soon</h3>
+            <p></p>
         </div>
     </div>
-
     <div class="card">
         <div class="card-content">
             <h3>Coming Soon</h3>
+            <p></p>
         </div>
     </div>
 </section>
