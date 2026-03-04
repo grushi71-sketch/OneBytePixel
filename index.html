@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>OneBytePixel</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OneBytePixel – Gry mobilne z duszą retro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>OneBytePixel</h1>
-  <p>Classic roots. Modern games.</p>
+
+  <header>
+    <h1>OneBytePixel</h1>
+    <p class="tagline">Classic roots. Modern games.</p>
+    <p class="subtitle">Indie studio | Gry na Androida | Pixel art & retro vibe</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>Kilka słów o nas</h2>
+      <p>
+        Jesteśmy małym indie studiem, które kocha stare gry i piksele. 
+        Tworzymy tytuły na Androida – proste, wciągające i z klimatem lat 80./90.
+        Na razie tylko Android, ale w planach jest znacznie więcej.
+      </p>
+    </section>
+
+    <section class="games">
+      <h2>Nasze gry</h2>
+      <div class="games-grid">
+        
+        <!-- Miejsce na Twoją pierwszą grę -->
+        <div class="game-card">
+          <div class="game-image-placeholder">SCREENSHOT<br>GRY #1</div>
+          <h3>[Nazwa gry]</h3>
+          <p>Krótki opis – co to za gra, dlaczego warto zagrać (2–3 zdania).</p>
+          <a href="#" class="btn">Google Play (wkrótce)</a>
+        </div>
+
+        <!-- Dodatkowa pusta karta na przyszłość -->
+        <div class="game-card coming-soon">
+          <div class="game-image-placeholder">?</div>
+          <h3>Nadchodząca gra</h3>
+          <p>Coś dużego w przygotowaniu…</p>
+          <span class="btn disabled">Wkrótce</span>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 OneBytePixel • Made with pixels & passion</p>
+  </footer>
+
 </body>
 </html>
