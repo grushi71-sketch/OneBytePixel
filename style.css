@@ -1,17 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Courier New', monospace;
-  background-color: #0d0d0d;
-  color: #f0f0f0;
+  font-family: 'Roboto Mono', monospace;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 5rem 1rem 3rem;
+  background: linear-gradient(to bottom, #111, #0a0a0a);
+  border-bottom: 3px solid #ff0055;
 }
 
 h1 {
-  text-align: center;
-  padding: 2rem;
+  margin: 0;
+  font-family: 'VT323', monospace;
+  font-size: 6rem;
   color: #ff0055;
+  text-shadow: 0 0 12px #ff0055, 0 0 24px #ff005544;
+  letter-spacing: 6px;
 }
 
-p {
-  text-align: center;
+.tagline {
+  font-size: 1.8rem;
   color: #00ffff;
+  margin: 0.5rem 0 0;
+  text-shadow: 0 0 10px #00ffff44;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+.about, .games {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 4rem;
+  color: #00ffff;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 0 15px #00ffff55;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.game-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff0055;
+  box-shadow: 0 10px 30px rgba(255,0,85,0.2);
+}
+
+.game-image-placeholder {
+  height: 180px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #444;
+  border-bottom: 2px solid #00ffff33;
+}
+
+.game-card h3 {
+  color: #ff0055;
+  margin: 1.2rem 1.2rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.game-card p {
+  margin: 0 1.2rem 1.4rem;
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.btn {
+  display: block;
+  background: #ff0055;
+  color: white;
+  text-align: center;
+  padding: 0.9rem;
+  margin: 0 1.2rem 1.4rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #ff2a6a;
+}
+
+.btn.disabled {
+  background: #444;
+  cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #555;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+/* responsywność – telefon */
+@media (max-width: 600px) {
+  h1 { font-size: 4.5rem; }
+  h2 { font-size: 3.2rem; }
 }
