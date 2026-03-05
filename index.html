@@ -81,11 +81,6 @@ nav a {
     transform:translateY(-10px);
     box-shadow:0 0 30px #ff4d95;
 }
-.card img {
-    width:100%;
-    height:200px;       /* wysokość kafelka */
-    object-fit:cover;    /* wypełnia box */
-}
 .card-content {
     padding:20px;
     text-align:center;
@@ -126,12 +121,12 @@ footer {
 </section>
 
 <section class="games">
+
     <!-- Kafelek Tree Jumping -->
     <div class="card">
         <a href="treejumping.html">
-            <div style="width:100%; height:200px; overflow:hidden;">
-                <!-- Przesunięty obraz, żeby tytuł był widoczny -->
-                <img src="treejumping-1.png" style="width:100%; position:relative; top:-60px;">
+            <div style="width:100%; height:200px; overflow:hidden; position:relative;">
+                <img src="treejumping-1.png" style="width:100%; position:absolute; top:-45px;" alt="Tree Jumping">
             </div>
             <div class="card-content">
                 <h3>Tree Jumping</h3>
@@ -143,22 +138,24 @@ footer {
     <!-- Puste kafelki na przyszłe gry -->
     <div class="card">
         <div style="width:100%; height:200px; overflow:hidden;">
-            <img src="comingsoon.png" style="width:100%; position:relative; top:0px;">
+            <img src="comingsoon.png" style="width:100%; position:relative; top:0px;" alt="Coming Soon">
         </div>
         <div class="card-content">
             <h3>Coming Soon</h3>
             <p></p>
         </div>
     </div>
+
     <div class="card">
         <div style="width:100%; height:200px; overflow:hidden;">
-            <img src="comingsoon.png" style="width:100%; position:relative; top:0px;">
+            <img src="comingsoon.png" style="width:100%; position:relative; top:0px;" alt="Coming Soon">
         </div>
         <div class="card-content">
             <h3>Coming Soon</h3>
             <p></p>
         </div>
     </div>
+
 </section>
 
 <footer>
