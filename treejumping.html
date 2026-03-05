@@ -29,13 +29,32 @@ nav a { color:#ff2d75; text-decoration:none; margin-left:30px; font-weight:700; 
 }
 .content h1 { font-size:48px; color:#ff2d75; margin-bottom:20px; }
 .content p { font-size:18px; color:#ffa3c1; margin-bottom:40px; }
+
+/* Poziomy rząd screenów */
+.screenshots {
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding-bottom:20px;
+}
 .screenshots img {
-    width:100%;
-    max-width:400px;
-    margin-bottom:20px;
-    display:block;
+    height:300px;
+    flex-shrink:0;
     border-radius:10px;
 }
+
+/* Estetyka scrolla (opcjonalne) */
+.screenshots::-webkit-scrollbar {
+    height:8px;
+}
+.screenshots::-webkit-scrollbar-thumb {
+    background:#ff2d75;
+    border-radius:4px;
+}
+.screenshots::-webkit-scrollbar-track {
+    background:#0c0c14;
+}
+
 footer {
     text-align:center;
     padding:40px 8%;
